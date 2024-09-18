@@ -1,0 +1,134 @@
+/* ========================VARIABLE========================== */
+
+:root {
+  --main-color: #e02f6b;
+  --blue: #0000ff;
+  --blue-dark: #18293c;
+  --orange: #ffa500;
+  --green-yellow: #cddc39;
+  --pink-light: #efa2b4;
+  --cyan-lingh: #aef1ee;
+  --white: #ffffff;
+  --white-alpha-40: rgba(255, 255, 255, 0.4);
+  --white-alpha-25: rgba(255, 255, 255, 0.25);
+  --backdrop-filter-blur: blur(10px);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+
+  /* background-color: red; */
+}
+.content {
+  width: 400px;
+  height: 450px;
+  background-color: var(--white-alpha-25);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding: 50px 0;
+  border-radius: 4px;
+}
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.form {
+  margin-top: 20px;
+  text-align: center;
+}
+.control {
+  padding: 12px;
+}
+.control_item {
+  border: 2px solid transparent;
+  width: 80%;
+  height: 46px;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.control_item:hover,
+.control_item:focus {
+  border: 2px solid var(--pink-light);
+  box-shadow: 0px 0px 0px 7px rgba(243, 146, 198, 0.2);
+  background-color: white;
+}
+.link-change_password {
+  font-size: 15px;
+  color: var(--blue-dark);
+}
+.btn {
+  margin-top: 20px;
+}
+
+/* nut button */
+/* From Uiverse.io by nikk7007 */
+.button {
+  --color: var(--main-color);
+  padding: 0.4em 1.6em;
+  background-color: transparent;
+  border-radius: 0.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+}
+
+.button::before,
+.button::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 0.75s ease;
+}
+
+.button::before {
+  top: -1em;
+  left: -1em;
+}
+
+.button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.button:hover::before,
+.button:hover::after {
+  height: 410px;
+  width: 410px;
+}
+
+.button:hover {
+  color: var(--white);
+}
+
+.button:active {
+  filter: brightness(0.5);
+}
+.account {
+  margin-top: 20px;
+}
+.link-login {
+  color: var(--main-color);
+}
+.link-login:hover {
+  color: var(--blue-dark);
+}

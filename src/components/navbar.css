@@ -1,0 +1,64 @@
+/* ========================VARIABLE========================== */
+
+:root {
+  --main-color: #e02f6b;
+  --blue: #0000ff;
+  --blue-dark: #18293c;
+  --orange: #ffa500;
+  --green-yellow: #cddc39;
+  --pink-light: #efa2b4;
+  --cyan-lingh: #aef1ee;
+  --white: #ffffff;
+  --white-alpha-40: rgba(255, 255, 255, 0.4);
+  --white-alpha-25: rgba(255, 255, 255, 0.25);
+  --backdrop-filter-blur: blur(10px);
+}
+.navbar {
+  height: 8vh;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+  /* position: fixed; */
+}
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--blue-dark);
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item {
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: var(--blue-dark);
+  transform: all 0.5s ease;
+}
+
+.item:hover {
+  background-color: var(--white-alpha-40);
+  color: var(--blue-dark);
+}
+
+.item.active {
+  background-color: var(--white-alpha-40);
+  /* font-weight: bold; */
+}
+.link_item {
+  font-size: 20px;
+  color: var(--blue-dark);
+  font-weight: 500;
+}
+.login {
+  margin-left: 20px;
+}
+.login i {
+  font-size: 36px;
+  color: var(--blue-dark);
+}
